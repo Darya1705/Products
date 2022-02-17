@@ -14,7 +14,7 @@ class ProductRepositoryTest {
     private Product Coffee = new Product(9, "С1", 50);
 
     @Test
-    public void sholdSaveOneProduct() {
+    public void shouldSaveOneProduct() {
         repository.save(coreJava);
 
         Product[] expected = new  Product[]{coreJava};
