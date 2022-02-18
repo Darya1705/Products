@@ -1,5 +1,8 @@
 package ru.netology.manager;
 
+import ru.netology.domain.Product;
+import ru.netology.repository.ProductRepository;
+
 public class ProductManager {
     private final ProductRepository repository;
 
@@ -27,11 +30,7 @@ public class ProductManager {
     }
 
     public boolean matches(Product product, String search) {
-        if (product.getName().contains(search)) {
-            return true;
-        } else {
-            return false;
-        }
+        return product.getName().contains(search);
     }
 }
 

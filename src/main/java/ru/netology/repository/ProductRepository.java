@@ -1,7 +1,9 @@
-package ru.netology.manager;
+package ru.netology.repository;
+
+import ru.netology.domain.Product;
 
 public class ProductRepository {
-        private Product[] products = new Product[0];
+    private Product[] products = new Product[0];
 
     public void save(Product product) {
         int length = products.length + 1;
